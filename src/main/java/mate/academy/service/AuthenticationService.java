@@ -2,7 +2,6 @@ package mate.academy.service;
 
 import mate.academy.model.User;
 
-import static mate.academy.service.UserService.getUsers;
 import static mate.academy.service.UserService.users;
 
 public class AuthenticationService {
