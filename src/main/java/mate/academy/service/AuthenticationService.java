@@ -8,7 +8,6 @@ public class AuthenticationService {
         UserService userService = new UserService();
         User foundUser = userService.findByEmail(email);
         if (foundUser != null && password.equals(foundUser.getPassword())) {
-
             return true;
         }
 
