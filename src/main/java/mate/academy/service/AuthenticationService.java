@@ -10,8 +10,6 @@ public class AuthenticationService {
         if (foundUser != null && password.equals(foundUser.getPassword())) {
             return true;
         }
-
         return false;
     }
-
 }
