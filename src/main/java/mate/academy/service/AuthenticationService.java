@@ -9,5 +9,4 @@ public class AuthenticationService {
         boolean dataUser = foundUser != null && password.equals(foundUser.getPassword()) ? true : false;
         return dataUser;
     }
-
 }
