@@ -7,8 +7,6 @@ public class AuthenticationService {
 
     public boolean login(String email, String password) {
         User foundUser = userService.findByEmail(email);
-        boolean dataUser = foundUser != null && password.equals(foundUser.getPassword())
-                        ? true : false;
-        return dataUser;
+        return foundUser != null && password.equals(foundUser.getPassword());
     }
 }
